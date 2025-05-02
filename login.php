@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,9 +14,9 @@
 <body>
     <!-- Barra de navegación -->
     <nav class="nav">
-        <div class="logo">Iniciar Sesion</div>
+        <!--<div class="logo">Iniciar Sesion</div> -->
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Regresar al Inicio</a></li>
 
         </ul>
     </nav>
@@ -61,6 +63,6 @@
                 <!-- Termina form -->
             </div>
         </div>
-    </div><!-- Div general -->
+    </div><!-- Div general -->      
 </body>
 </html>
