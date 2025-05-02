@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
         <!--Inicia el Form-->
-        <form action="altaRegistro.php" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 
                 <!--NOMBRE-->
