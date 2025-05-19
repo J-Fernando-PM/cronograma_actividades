@@ -11,18 +11,18 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">GP Gestión de Proyectos</a>
+        <a class="navbar-brand" href="#">WorkPilot</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item me-3"><a class="nav-link" href="../Index.php">Inicio</a></li>
-                <li class="nav-item me-3"><a class="nav-link" href="Sobre_Nosotros.php">Sobre Nosotros</a></li>
-                <li class="nav-item me-3"><a class="nav-link" href="Contacto.php">Contacto</a></li>
+                <!-- <li class="nav-item me-3"><a class="nav-link" href="Sobre_Nosotros.php">Sobre Nosotros</a></li>
+                <li class="nav-item me-3"><a class="nav-link" href="Contacto.php">Contacto</a></li> -->
             </ul>
             <div class="d-flex">
-                <a href="../components/Opcion_Login.php" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+                <a href="../components/escoge_lo.php" class="btn btn-outline-light me-2">Iniciar Sesión</a>
             </div>
         </div>
     </div>

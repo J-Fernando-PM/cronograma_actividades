@@ -13,13 +13,12 @@
 
     <div class="container">
         <br>
-        <h1>Bienvenido</h1>
-        <h2>GP la Plataforma de Gestión de Proyectos</h2>
-        <h4>Optimiza la gestión de tus proyectos, equipos y actividades de manera eficiente.</h4>
+        <h1>Bienvenido a</h1>
+        <h2>WorkPilot</h2>
         <br>
-        <p class="lead">GP o Gestión de Proyectos es una plataforma para poder tener una gestión de Todos
-            los proyectos que vayas a realizar, manteniendo un orden de los usuarios, equipos,
-            Actividades, Fechas y Horas propuestas y utilizadas.</p>
+        <p class="lead">WorkPilot es una plataforma integral diseñada para planificar, organizar y optimizar todos tus proyectos.
+             Permite un control eficiente de los usuarios, equipos de trabajo, tareas, cronogramas, tiempos estimados y horas reales utilizadas. Con WorkPilot,
+             podrás llevar un seguimiento claro y ordenado de cada etapa del proyecto, mejorando la productividad y facilitando la toma de decisiones.</p>
         <!-- <br>
         <a href="components/Opcion_Login.php" class="btn-gris btn-light btn-lg mt-3">Empezar</a> -->
     </div>

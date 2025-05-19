@@ -28,11 +28,11 @@
             <div class="row">
                 <!-- Información de la empresa -->
                 <div class="col-md-4">
-                    <h4 class="text-primary">Gestión de Proyectos</h4>
-                    <p>Optimiza y administra tus proyectos de manera eficiente, con control de equipos y actividades.</p>
+                    <h4 class="text-primary">WorkPilot</h4>
+                    <p>Gestiona tus proyectos con eficiencia, organizando equipos, actividades y tiempos en una plataforma pensada para optimizar cada etapa del proceso.</p>
                 </div>
 
-                <!-- Enlaces Rápidos -->
+                <!-- Enlaces Rápidos
                 <div class="col-md-4">
                     <h4 class="text-primary">Enlaces Rápidos</h4>
                     <ul class="list-unstyled">
@@ -42,7 +42,7 @@
                     </ul>
                 </div>
 
-                <!-- Redes Sociales -->
+                Redes Sociales
                 <div class="col-md-4">
                     <h4 class="text-primary">Síguenos</h4>
                     <div class="d-flex gap-3">
@@ -58,8 +58,8 @@
                         </a>
                     </div>
 
-                    <!-- Integrantes -->
-                    <!-- <h4 class="text-primary mt-4">Integrantes</h4>
+                    Integrantes
+                    <h4 class="text-primary mt-4">Integrantes</h4>
                     <div class="d-flex flex-wrap">
                         <div class="text-center me-3">
                             <img src="img/" alt="Miembro 1" class="rounded-circle" width="50">
@@ -77,13 +77,13 @@
                             <img src="/img/luis.jpeg" alt="Miembro 4" class="rounded-circle" width="50">
                             <p class="small">Desarrollador 4</p>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Línea Divisoria y Copyright -->
+            Línea Divisoria y Copyright
             <hr class="border-light my-4">
-            <p class="text-center">© 2025 Gestión de Proyectos. Todos los derechos reservados.</p>
+            <p class="text-center">© 2025 Gestión de Proyectos. Todos los derechos reservados.</p> -->
         </div>
     </footer>
 

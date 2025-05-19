@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Redirigir al dashboard según el rol
             if ($usuario['id_rol'] == 3) {
-                header("Location: ../Operario/Dashboard.php");
+                header("Location: ../usuario/Dashboard.php");
             } else {
-                header("Location: Login_Operario.php");
+                header("Location: Login_Usuario.php");
             }
             exit();
         } else {
@@ -41,7 +41,7 @@ mysqli_close($conexion);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Operario</title>
+    <title>Login Usuario</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@ mysqli_close($conexion);
 
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
         <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
-            <h2 class="text-center mb-4">Iniciar Sesión Operario</h2>
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo electrónico</label>

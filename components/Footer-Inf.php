@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Proyectos</title>
+    <title>WorkPilot</title>
 </head>
 
 <style>
@@ -28,11 +28,11 @@
             <div class="row">
                 <!-- Información de la empresa -->
                 <div class="col-md-4">
-                    <h4 class="text-primary">Gestión de Proyectos</h4>
+                    <h4 class="text-primary">WorkPilot</h4>
                     <p>Optimiza y administra tus proyectos de manera eficiente, con control de equipos y actividades.</p>
                 </div>
-
-                <!-- Enlaces Rápidos -->
+<!-- 
+                Enlaces Rápidos
                 <div class="col-md-4">
                     <h4 class="text-primary">Enlaces Rápidos</h4>
                     <ul class="list-unstyled">
@@ -42,7 +42,7 @@
                     </ul>
                 </div>
 
-                <!-- Redes Sociales -->
+                Redes Sociales
                 <div class="col-md-4">
                     <h4 class="text-primary">Síguenos</h4>
                     <div class="d-flex gap-3">
@@ -56,7 +56,7 @@
                             class="text-white fs-4">
                             <i class="fab fa-instagram"></i>
                         </a>
-                    </div>
+                    </div> -->
 
                     <!-- Integrantes -->
                     <!-- <h4 class="text-primary mt-4">Integrantes</h4>
@@ -81,9 +81,9 @@
                 </div>
             </div>
 
-            <!-- Línea Divisoria y Copyright -->
+            <!-- Línea Divisoria y Copyright
             <hr class="border-light my-4">
-            <p class="text-center">© 2025 Gestión de Proyectos. Todos los derechos reservados.</p>
+            <p class="text-center">© 2025 Gestión de Proyectos. Todos los derechos reservados.</p> -->
         </div>
     </footer>
 

@@ -15,7 +15,7 @@
                 <img src="../Img/lider.png" alt="Líder">
                 <div class="card-content">
                     <h3>Entrar como Líder</h3>
-                    <p>Puedes crear proyectos, actividades, equipos y administrar todo acorde a tu proyecto.</p>
+                    <p>Lidera con claridad: organiza tu equipo, define actividades y lleva tu proyecto al siguiente nivel.</p>
                 </div>
             </a>
         </div>
@@ -24,16 +24,16 @@
                 <img src="../Img/admi.png" alt="Administrador">
                 <div class="card-content">
                     <h3>Entrar como Administrador</h3>
-                    <p>Puedes administrar actividades, equipos y gestionar el proyecto designado.</p>
+                    <p>Toma el control desde el principio: impulsa nuevos proyectos y elige a quienes los llevarán al éxito.</p>
                 </div>
             </a>
         </div>
         <div class="card">
-            <a href="Login_Operario.php">
+            <a href="Login_Usuario.php">
                 <img src="../Img/operario.png" alt="Operario">
                 <div class="card-content">
-                    <h3>Entrar como Operario</h3>
-                    <p>Puedes ver el proyecto, actividades y equipo acorde a tu proyecto designado.</p>
+                    <h3>Entrar como Usuario</h3>
+                    <p>Consulta fácilmente tus proyectos asignados, gestiona tus tareas y colabora con tu equipo sin complicaciones.</p>
                 </div>
             </a>
         </div>
