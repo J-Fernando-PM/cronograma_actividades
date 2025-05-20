@@ -63,7 +63,225 @@ $total_actividades = mysqli_fetch_assoc($consulta_actividades)['total'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Iconos FontAwesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../Styles/style_dashboard.css">
+   <style>
+
+     /* Paleta de colores actualizada */
+    :root {
+      --fondo-oscuro: #0A0A0A;
+      --fondo-secundario: #1A1A1A;
+      --dorado-principal: #FFD700;
+      --dorado-secundario: #D4AF37;
+      --texto-blanco: #FFFFFF;
+      --texto-gris: #CCCCCC;
+    }
+
+    /* Resto del CSS corregido */
+    body {
+      background-color: var(--fondo-oscuro);
+      color: var(--texto-blanco);
+    }
+
+    .card {
+      background: var(--fondo-secundario) !important;
+      border: 1px solid var(--dorado-secundario) !important;
+      color: var(--texto-blanco) !important;
+    }
+
+    .table {
+      --bs-table-bg: var(--fondo-secundario);
+      --bs-table-striped-bg: #252525;
+      --bs-table-hover-bg: #303030;
+      --bs-table-color: var(--texto-blanco);
+      --bs-table-striped-color: var(--texto-blanco);
+      --bs-table-hover-color: var(--texto-blanco);
+    }
+
+    .table thead {
+      background-color: var(--dorado-secundario) !important;
+      color: var(--fondo-oscuro) !important;
+    }
+
+    .btn-primary {
+      background-color: var(--dorado-principal);
+      border-color: var(--dorado-secundario);
+      color: var(--fondo-oscuro) !important;
+    }
+
+
+    /* Paleta de colores */
+:root {
+  --fondo-oscuro: #0A0A0A;
+  --fondo-secundario: #1A1A1A;
+  --dorado-principal: #FFD700;
+  --dorado-secundario: #D4AF37;
+  --texto-blanco: #FFFFFF;
+  --texto-gris: #CCCCCC;
+}
+
+/* Estructura principal */
+body {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-blanco);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Sidebar mejorado */
+.sidebar {
+  background: linear-gradient(to bottom, #2d2d2d, #3d3d3d, #4d4d4d, #d4af37);
+  width: 280px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px 20px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+  border-right: 2px solid #d4af37;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  text-align: center;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 12px 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #d4af37;
+  transform: translateX(10px);
+}
+
+.sidebar ul li a i {
+  width: 25px;
+  font-size: 1.2rem;
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+/* Contenido Principal */
+.main-content {
+  margin-left: 280px;
+  padding: 25px;
+  background-color: var(--fondo-oscuro);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--fondo-secundario) !important;
+  border-bottom: 1px solid var(--dorado-principal);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: var(--dorado-principal);
+}
+
+.navbar i {
+  color: var(--dorado-principal);
+}
+
+/* Tarjetas */
+.card {
+  background: var(--fondo-secundario);
+  border: 1px solid var(--dorado-secundario);
+  border-radius: 1rem;
+  color: var(--texto-blanco);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: var(--dorado-principal) !important;
+}
+
+/* Tablas */
+.table {
+  --bs-table-bg: var(--fondo-secundario);
+  --bs-table-striped-bg: #252525;
+  --bs-table-hover-bg: #303030;
+  color: var(--texto-blanco);
+  border: 1px solid #333333;
+}
+
+.table thead {
+  background-color: var(--dorado-principal) !important;
+  color: var(--fondo-oscuro) !important;
+}
+
+.table thead th {
+  border-bottom: 2px solid var(--dorado-secundario);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--dorado-principal);
+  border-color: var(--dorado-secundario);
+  color: var(--fondo-oscuro);
+}
+
+.btn-primary:hover {
+  background-color: var(--dorado-secundario);
+  border-color: var(--dorado-principal);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #218838;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #e0a800;
+  color: var(--fondo-oscuro);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--fondo-oscuro);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dorado-principal);
+  border-radius: 4px;
+}
+   </style>
 </head>
 
 <style>
@@ -88,7 +306,7 @@ $total_actividades = mysqli_fetch_assoc($consulta_actividades)['total'];
     <!-- Contenido Principal -->
     <div class="main-content">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <h4 class="me-auto"><b>Dashboard</b></h4>
                 <div class="d-flex align-items-center">
@@ -100,9 +318,9 @@ $total_actividades = mysqli_fetch_assoc($consulta_actividades)['total'];
         </nav>
 
         <!-- Proyectos Asignados -->
-        <div class="container mt-4">
-            <div class="row g-3">
-                <div class="row g-3">
+         <div class="col-md-12">
+            <div class="card mb-3 shadow"> <!-- Clases corregidas -->
+                <div class="card-body">
                     <div class="col-md-12">
                         <div class="card text-dark bg-light mb-3 shadow">
                             <div class="card-body">

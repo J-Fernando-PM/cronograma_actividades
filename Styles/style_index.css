@@ -1,21 +1,27 @@
-    /* Estilo personalizado para un botón gris */
-    .btn-gris {
-        background-color: rgb(184, 191, 198); /* Gris */
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        font-size: 18px;
-        text-align: center;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        text-decoration: none; /* Elimina el subrayado del enlace */
-    }
+/* Botón elegante en dorado oscuro sobre fondo negro */
+.btn-elegante {
+    background-color: #d4af37; /* Dorado */
+    color: #1c1c1e; /* Negro profundo */
+    border: none;
+    padding: 14px 28px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+    font-family: 'Segoe UI', sans-serif;
+}
 
-    .btn-gris:hover {
-        background-color:rgb(114, 120, 125); /* Gris más oscuro al pasar el ratón */
-    }
+.btn-elegante:hover {
+    background-color: #b8962e; /* Dorado más oscuro */
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(212, 175, 55, 0.4);
+}
 
-    /* Asegúrate de eliminar el subrayado de todos los enlaces */
-    a {
-        text-decoration: none;
-    }
+/* Elimina subrayado de todos los enlaces globalmente */
+a {
+    text-decoration: none;
+}

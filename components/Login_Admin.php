@@ -43,28 +43,120 @@ mysqli_close($conexion);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin</title>
+    <style>
+    :root {
+        --fondo-oscuro: #0A0A0A;
+        --fondo-secundario: #1A1A1A;
+        --dorado-principal: #FFD700;
+        --dorado-secundario: #D4AF37;
+        --texto-blanco: #FFFFFF;
+        --texto-gris: #CCCCCC;
+    }
 
+    body {
+        background-color: var(--fondo-oscuro);
+        color: var(--texto-blanco);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        background: var(--fondo-secundario) !important;
+        border: 2px solid var(--dorado-secundario) !important;
+        border-radius: 15px;
+    }
+
+    .form-control {
+        background-color: #2A2A2A !important;
+        border: 1px solid #333333 !important;
+        color: var(--texto-blanco) !important;
+    }
+
+    .form-control:focus {
+        border-color: var(--dorado-principal) !important;
+        box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25) !important;
+    }
+
+    .btn-primary {
+        background-color: var(--dorado-principal) !important;
+        border-color: var(--dorado-secundario) !important;
+        color: var(--fondo-oscuro) !important;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--dorado-secundario) !important;
+        transform: translateY(-2px);
+    }
+
+    .form-label {
+        color: var(--dorado-principal) !important;
+        font-weight: 500;
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    h2 {
+        color: var(--dorado-principal) !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    :root {
+    --fondo-oscuro: #000000; /* Cambiado a negro puro */
+    --fondo-secundario: #1A1A1A;
+    --dorado-principal: #FFD700;
+    --dorado-secundario: #D4AF37;
+    --texto-blanco: #FFFFFF;
+    --texto-gris: #CCCCCC;
+}
+
+body {
+    background-color: var(--fondo-oscuro) !important; /* Fondo negro completo */
+    color: var(--texto-blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background: var(--fondo-secundario) !important;
+    border: 2px solid var(--dorado-secundario) !important;
+    border-radius: 15px;
+}
+    </style>
 </head>
 
 <body>
     <?php include 'Navbar-Login.php'; ?>
 
-    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-        <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
-            <h2 class="text-center mb-4">Iniciar Sesión Admin</h2>
+   <div class="container d-flex justify-content-center align-items-center flex-grow-1">
+        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+            <h2 class="text-center mb-4"><i class="fas fa-lock"></i> Acceso Admin</h2>
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-                <div class="mb-3">
+                <div class="mb-4">
                     <label for="correo" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="correo" name="correo" required placeholder="Ingresa tu correo">
+                    <input type="email" class="form-control" id="correo" name="correo" required 
+                           placeholder="correo@ejemplo.com">
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                     <label for="pass" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="pass" name="pass" required placeholder="Ingresa tu contraseña">
+                    <input type="password" class="form-control" id="pass" name="pass" required 
+                           placeholder="••••••••">
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                <button type="submit" class="btn btn-primary w-100 py-2">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar sesión
+                </button>
             </form>
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

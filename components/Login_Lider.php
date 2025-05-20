@@ -42,6 +42,92 @@ mysqli_close($conexion);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Lider</title>
+       <style>
+    :root {
+        --fondo-oscuro: #0A0A0A;
+        --fondo-secundario: #1A1A1A;
+        --dorado-principal: #FFD700;
+        --dorado-secundario: #D4AF37;
+        --texto-blanco: #FFFFFF;
+        --texto-gris: #CCCCCC;
+    }
+
+    body {
+        background-color: var(--fondo-oscuro);
+        color: var(--texto-blanco);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        background: var(--fondo-secundario) !important;
+        border: 2px solid var(--dorado-secundario) !important;
+        border-radius: 15px;
+    }
+
+    .form-control {
+        background-color: #2A2A2A !important;
+        border: 1px solid #333333 !important;
+        color: var(--texto-blanco) !important;
+    }
+
+    .form-control:focus {
+        border-color: var(--dorado-principal) !important;
+        box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25) !important;
+    }
+
+    .btn-primary {
+        background-color: var(--dorado-principal) !important;
+        border-color: var(--dorado-secundario) !important;
+        color: var(--fondo-oscuro) !important;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--dorado-secundario) !important;
+        transform: translateY(-2px);
+    }
+
+    .form-label {
+        color: var(--dorado-principal) !important;
+        font-weight: 500;
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    h2 {
+        color: var(--dorado-principal) !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    :root {
+    --fondo-oscuro: #000000; /* Cambiado a negro puro */
+    --fondo-secundario: #1A1A1A;
+    --dorado-principal: #FFD700;
+    --dorado-secundario: #D4AF37;
+    --texto-blanco: #FFFFFF;
+    --texto-gris: #CCCCCC;
+}
+
+body {
+    background-color: var(--fondo-oscuro) !important; /* Fondo negro completo */
+    color: var(--texto-blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background: var(--fondo-secundario) !important;
+    border: 2px solid var(--dorado-secundario) !important;
+    border-radius: 15px;
+}
+    </style>
 </head>
 
 <body>
