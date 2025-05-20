@@ -130,33 +130,27 @@ body {
 }
     </style>
 </head>
-
 <body>
     <?php include 'Navbar-Login.php'; ?>
 
-   <div class="container d-flex justify-content-center align-items-center flex-grow-1">
-        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
-            <h2 class="text-center mb-4"><i class="fas fa-lock"></i> Acceso Admin</h2>
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
+            <div class="login-header text-center mb-4">
+                <img src="../Img/admi.png" alt="Administrador" 
+                     style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; border: 2px solid #D4AF37; margin-bottom: 1rem;">
+                <h2>Iniciar Sesión Administrador</h2>
+            </div>
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-                <div class="mb-4">
+                <div class="mb-3">
                     <label for="correo" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="correo" name="correo" required 
-                           placeholder="correo@ejemplo.com">
+                    <input type="email" class="form-control" id="correo" name="correo" required placeholder="Ingresa tu correo">
                 </div>
-                <div class="mb-4">
+                <div class="mb-3">
                     <label for="pass" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="pass" name="pass" required 
-                           placeholder="••••••••">
+                    <input type="password" class="form-control" id="pass" name="pass" required placeholder="Ingresa tu contraseña">
                 </div>
-                <button type="submit" class="btn btn-primary w-100 py-2">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar sesión
-                </button>
+                <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
             </form>
         </div>
     </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>

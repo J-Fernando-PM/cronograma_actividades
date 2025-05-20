@@ -131,12 +131,15 @@ body {
 </head>
 
 <body>
-
     <?php include 'Navbar-Login.php'; ?>
 
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
         <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
-            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+            <div class="login-header text-center mb-4">
+                <img src="../Img/operario.png" alt="Usuario" 
+                     style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; border: 2px solid #D4AF37; margin-bottom: 1rem;">
+                <h2>Iniciar Sesión Usuario</h2>
+            </div>
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo electrónico</label>
@@ -151,5 +154,3 @@ body {
         </div>
     </div>
 </body>
-
-</html>
